@@ -1,26 +1,26 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px; /* Optional spacing between tables */
+  margin-bottom: 20px; 
 }
 
 th {
-  background-color: #f2f2f2; /* Light gray background color */
+  background-color: #f2f2f2; 
   padding: 10px;
   text-align: left;
-  border: 1px solid #dddddd; /* Border color */
+  border: 1px solid #dddddd; 
 }
 
 tr {
-  border: 1px solid #dddddd; /* Border color */
+  border: 1px solid #dddddd; 
 }
 
 td {
   padding: 10px;
   text-align: left;
-  border: 1px solid #dddddd; /* Border color */
+  border: 1px solid #dddddd; 
 }
 
 .backgroundImg {
-  background-image: url("D:\main\zipFront\FrontendDeployment\src\Images\mainBackground.jpg");
+  background-image: url("../Images/mainBackground.jpg");
 }
