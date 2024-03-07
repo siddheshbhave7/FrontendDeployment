@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; /* Optional spacing between tables */
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background color */
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dddddd; /* Border color */
+}
+
+tr {
+  border: 1px solid #dddddd; /* Border color */
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #dddddd; /* Border color */
+}
+
+.backgroundImg {
+  background-image: url("F:\Parking-System(GitCloneRepo)\frontend\src\Images\mainBackground.jpg");
+}

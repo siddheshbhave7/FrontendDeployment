@@ -1,0 +1,18 @@
+.container-fluid {
+  background-image: url("../Images/mainBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.display-3 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}

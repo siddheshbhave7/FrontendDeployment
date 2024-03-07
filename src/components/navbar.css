@@ -1,0 +1,81 @@
+.protest-riot-regular {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.logo {
+  border-radius: 50px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: antiquewhite;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff; /* Adjust the color as needed */
+  text-decoration: none;
+
+  font-size: 40px !important;
+  font-weight: bold !important;
+}
+
+.navbar-brand:hover {
+  color: #fff; /* Adjust the hover color as needed */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Adjust the color as needed */
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-size: 3rem;
+  color: #fff; /* Adjust the color as needed */
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold !important;
+}
+
+.nav-link:hover {
+  color: #fff; /* Adjust the hover color as needed */
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #9bb5b9;
+    padding: 1rem;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+}
