@@ -28,7 +28,7 @@ const Signin = () => {
       toast.error("please enter password");
     } else {
       await axios
-        .post("http://localhost:7020/parkingUser/signIn", {
+        .post("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signIn", {
           email,
           password,
         })

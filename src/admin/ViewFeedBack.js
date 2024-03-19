@@ -9,7 +9,7 @@ const ViewFeedBack = () => {
   const getFeedback = async () => {
     try {
       await axios
-        .get("http://localhost:7020/feedbacks/getfeedback")
+        .get("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/feedbacks/getfeedback")
         .then((response) => {
           console.log(response.data);
           setFeedback(response.data);
