@@ -43,7 +43,7 @@ const Signup = () => {
       // make the API call to check if user exists
       try {
         await axios
-          .post("http://localhost:9095/parkingUser/signUp", {
+          .post("http://localhost:7020/parkingUser/signUp", {
             firstName,
             lastName,
             email,

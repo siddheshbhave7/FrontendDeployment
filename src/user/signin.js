@@ -28,7 +28,7 @@ const Signin = () => {
       toast.error("please enter password");
     } else {
       await axios
-        .post("http://localhost:9095/parkingUser/signIn", {
+        .post("http://localhost:7020/parkingUser/signIn", {
           email,
           password,
         })
@@ -46,7 +46,7 @@ const Signin = () => {
           sessionStorage["role"] = role;
           sessionStorage["email"] = email;
 
-          Cookies.set("user", JSON.stringify(result.data), { expires: 1 });
+          Cookies.set("USER", JSON.stringify(result.data), { expires: 1 });
 
           // check if user's authentication is successfull
           if (result["status"] === "error") {
@@ -60,9 +60,9 @@ const Signin = () => {
             // send the action
             // dispatch(signin(user))
             toast.success("Welcome " + (firstName + " " + lastName));
-            if (user.userRole === "user") navigate("/myhome");
-            if (user.userRole === "admin") navigate("/admin");
-            if (user.userRole === "staff") navigate("/bookings");
+            if (user.userRole === "USER") navigate("/myhome");
+            if (user.userRole === "ADMIN") navigate("/admin");
+            if (user.userRole === "STAFF") navigate("/bookings");
           }
         })
         .catch((error) => {

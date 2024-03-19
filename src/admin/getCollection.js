@@ -16,7 +16,7 @@ const SeeCollection = () => {
   console.log(endDate);
   const totalcollection = (props) => {
     axios
-      .post("http://localhost:9095/parkingAdmin/getCollection", {
+      .post("http://localhost:7020/parkingAdmin/getCollection", {
         initialDate,
         endDate,
       })

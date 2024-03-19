@@ -14,7 +14,7 @@ const FeedbackPage = () => {
   const giveFeedBack = async () => {
     try {
       await axios
-        .post(`http://localhost:9095/feedbacks/givefeedback`, {
+        .post(`http://localhost:7020/feedbacks/givefeedback`, {
           name,
           email,
           subject,

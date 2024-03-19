@@ -13,7 +13,7 @@ const UpdateFare = () => {
 
   const twoWheeler = async () => {
     await axios
-      .patch(`http://localhost:9095/parkingAdmin/updateTwowheelerFare/` + fare)
+      .patch(`http://localhost:7020/parkingAdmin/updateTwowheelerFare/` + fare)
       .then((response) => {
         const result = response.data;
         //console.log(response.data);
@@ -28,7 +28,7 @@ const UpdateFare = () => {
 
   const fourWheeler = async () => {
     await axios
-      .patch("http://localhost:9095/parkingAdmin/updateFourwheelerFare/" + fare)
+      .patch("http://localhost:7020/parkingAdmin/updateFourwheelerFare/" + fare)
       .then((response) => {
         const result = response.data;
         setRefresh(!refresh);
@@ -43,7 +43,7 @@ const UpdateFare = () => {
 
   const getfare = () => {
     axios
-      .get("http://localhost:9095/parkingAdmin/getFareDetails")
+      .get("http://localhost:7020/parkingAdmin/getFareDetails")
       .then((response) => {
         const result = response.data;
         // console.log(result.data);

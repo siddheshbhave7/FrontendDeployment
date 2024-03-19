@@ -29,7 +29,7 @@ const AddParking = () => {
 
   const add = () => {
     axios
-      .post("http://localhost:9095/parkingAdmin/addNewParkingArea", {
+      .post("http://localhost:7020/parkingAdmin/addNewParkingArea", {
         city,
         location,
         slots,
@@ -46,7 +46,7 @@ const AddParking = () => {
 
   const getParkinglist = async () => {
     await axios
-      .get("http://localhost:9095/parkingAdmin/getAllParkingAreaList")
+      .get("http://localhost:7020/parkingAdmin/getAllParkingAreaList")
       .then((response) => {
         const result = response.data;
         //console.log(result.data);

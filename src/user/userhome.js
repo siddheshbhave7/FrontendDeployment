@@ -37,7 +37,7 @@ const Userhome = () => {
   const booking = async () => {
     try {
       await axios
-        .post(`http://localhost:9095/parkingUser/addBookingBySlot/${slot}`, {
+        .post(`http://localhost:7020/parkingUser/addBookingBySlot/${slot}`, {
           pid,
           userId: cookie.userId,
           slots: Number(slot),

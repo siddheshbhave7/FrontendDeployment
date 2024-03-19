@@ -42,7 +42,7 @@ const Receipt = () => {
     try {
       await axios
         .get(
-          `http://localhost:9095/ParkingPayment/booking/${vcookie.bookingid}`
+          `http://localhost:7020/ParkingPayment/booking/${vcookie.bookingid}`
         )
         .then((response) => {
           console.log(response.data);
@@ -64,7 +64,7 @@ const Receipt = () => {
   const payMoney = async () => {
     await axios
       .post(
-        `http://localhost:9095/ParkingPayment/getPayment/${cookie.userId}`,
+        `http://localhost:7020/ParkingPayment/getPayment/${cookie.userId}`,
         {
           bookingid: getBookingId,
           vehicletypeId: getVehicleTypeId,

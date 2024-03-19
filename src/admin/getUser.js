@@ -16,7 +16,7 @@ const GetAllUsers = () => {
   }, []);
   const getUser = async () => {
     await axios
-      .get("http://localhost:9095/parkingAdmin/getUserByRole/USER")
+      .get("http://localhost:7020/parkingAdmin/getUserByRole/USER")
       .then((response) => {
         const result = response.data;
         //console.log("result")
