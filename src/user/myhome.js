@@ -20,7 +20,7 @@ const Myhome = ()=>{
 
       const getParking=()=>{
         try{
-        axios.get(`https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getAllParkingAreaList`)
+        axios.get(`http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getAllParkingAreaList`)
         .then((response)=>{
           console.log(response.data)
           Cookies.set('parking' , JSON.stringify(response.data));
@@ -33,7 +33,7 @@ console.log(err);
 
     const getfare = () => {
         axios
-          .get("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getFareDetails")
+          .get("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getFareDetails")
           .then((response) => {
             const result = response.data;
             console.log(result.data);

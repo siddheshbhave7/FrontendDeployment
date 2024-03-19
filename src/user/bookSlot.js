@@ -25,7 +25,7 @@ export default class CustomListDropDown extends React.Component {
     }
   }
   componentDidMount() {
-    fetch('httpss://jsonplaceholder.typicode.com/users')
+    fetch('http://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       .then((res) => this.setState({ collection: res }))
   }

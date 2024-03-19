@@ -29,7 +29,7 @@ const AddParking = () => {
 
   const add = () => {
     axios
-      .post("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/addNewParkingArea", {
+      .post("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/addNewParkingArea", {
         city,
         location,
         slots,
@@ -46,7 +46,7 @@ const AddParking = () => {
 
   const getParkinglist = async () => {
     await axios
-      .get("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getAllParkingAreaList")
+      .get("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getAllParkingAreaList")
       .then((response) => {
         const result = response.data;
         //console.log(result.data);

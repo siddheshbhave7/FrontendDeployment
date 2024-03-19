@@ -1,4 +1,4 @@
-//@import url("https://cdn.syncfusion.com/ej2/material.css")
+//@import url("http://cdn.syncfusion.com/ej2/material.css")
 import { DateTimePickerComponent } from "@syncfusion/ej2-react-calendars";
 import axios from "axios";
 import { useState } from "react";

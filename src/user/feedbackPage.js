@@ -14,7 +14,7 @@ const FeedbackPage = () => {
   const giveFeedBack = async () => {
     try {
       await axios
-        .post(`https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/feedbacks/givefeedback`, {
+        .post(`http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/feedbacks/givefeedback`, {
           name,
           email,
           subject,

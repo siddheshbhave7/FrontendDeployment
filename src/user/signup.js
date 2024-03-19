@@ -43,7 +43,7 @@ const Signup = () => {
       // make the API call to check if user exists
       try {
         await axios
-          .post("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signUp", {
+          .post("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signUp", {
             firstName,
             lastName,
             email,

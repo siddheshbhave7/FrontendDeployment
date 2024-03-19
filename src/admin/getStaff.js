@@ -19,7 +19,7 @@ const GetAllStaff = () => {
 
   const getStaff = () => {
     axios
-      .get("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getUserByRole/STAFF")
+      .get("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getUserByRole/STAFF")
       .then((response) => {
         const result = response.data;
         //console.log("result")
@@ -53,7 +53,7 @@ const GetAllStaff = () => {
     } else {
       // make the API call to check if user exists
       await axios
-        .post("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signUp", {
+        .post("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signUp", {
           firstName,
           lastName,
           email,

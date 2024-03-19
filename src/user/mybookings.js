@@ -15,7 +15,7 @@ const Mybookings = () => {
   const cancelBooking = async (id) => {
     try {
       await axios
-        .post(`https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/cancelBooking/${id}`)
+        .post(`http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/cancelBooking/${id}`)
         .then((response) => {
           setRefresh(!refresh);
           toast.success("Booking cancelled");
@@ -30,7 +30,7 @@ const Mybookings = () => {
   const book = async () => {
     try {
       await axios
-        .get(`https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/getBooking/${cookie.userId}`)
+        .get(`http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/getBooking/${cookie.userId}`)
         .then((response) => {
           const result = response.data;
           Cookies.set("booking", JSON.stringify(result.data), { expires: 1 });
