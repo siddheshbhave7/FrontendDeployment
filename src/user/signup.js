@@ -13,7 +13,7 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [mobileNo, setMobileNo] = useState("");
   const [password, setPassword] = useState("");
-  const [userRole, setUserRole] = useState("user");
+  const [userRole, setUserRole] = useState("USER");
   const [identity, setIdentityCard] = useState("");
 
   // this function is used to navigate from one component to another programmatically
@@ -43,7 +43,7 @@ const Signup = () => {
       // make the API call to check if user exists
       try {
         await axios
-          .post("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signUp", {
+          .post("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingUser/signUp", {
             firstName,
             lastName,
             email,

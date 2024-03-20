@@ -1,4 +1,4 @@
-//@import url("http://cdn.syncfusion.com/ej2/material.css")
+//@import url("https://cdn.syncfusion.com/ej2/material.css")
 import { DateTimePickerComponent } from "@syncfusion/ej2-react-calendars";
 import axios from "axios";
 import { useState } from "react";
@@ -16,7 +16,7 @@ const SeeCollection = () => {
   console.log(endDate);
   const totalcollection = (props) => {
     axios
-      .post("http://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getCollection", {
+      .post("https://ec2-23-20-146-4.compute-1.amazonaws.com:7020/parkingAdmin/getCollection", {
         initialDate,
         endDate,
       })
